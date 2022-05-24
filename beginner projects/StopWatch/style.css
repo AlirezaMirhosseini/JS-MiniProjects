@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: indigo;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.wrapper{
+    width: 90%;
+    margin: 50px auto;
+    color: #fff;
+    text-align: center;
+}
+h1,h2{
+    margin-bottom: 20px;
+}
+p{
+    margin-bottom: 10px;
+
+}
+button{
+    border: 1px solid #fff;
+    border-radius: 10px;
+    height: 40px;
+    outline: none;
+    color: #fff;
+    background-color: transparent;
+    width: 100px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #fff;
+    color: indigo;
+}

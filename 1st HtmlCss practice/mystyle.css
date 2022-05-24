@@ -1,0 +1,172 @@
+@font-face {
+  font-family: 'BTitr';
+  src: url(myFonts/BTitrBd.ttf) format('ttf');
+  src: url(myFonts/BTitrBd.ttf) format('eof');
+  src: url(myFonts/BTitrBd.ttf) format('woff');
+}
+@font-face {
+  font-family: 'BFarnaz';
+  src: url(myFonts/BFarnaz.ttf) format('ttf');
+  src: url(myFonts/BFarnaz.ttf) format('eof');
+  src: url(myFonts/BFarnaz.ttf) format('woff');
+}
+:root {
+  --dark-green: #0e4f1f;
+  --highlight-color: #ff1b68;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding-top: 3.5rem;
+}
+
+/* @supports (display: grid){
+  body {
+    margin: 0;
+    display: grid;
+    grid-template-rows: 3.5rem auto fit-content(8rem);
+    grid-template-areas: "header"
+                         "main"
+                         "footer";
+    padding-top: 0;
+    height: 100%;
+  }
+} */
+
+#page-overview{
+    background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent),
+    url("myPics/kavir.jpg") center/cover no-repeat border-box,
+    #ff1b68; 
+    width: 98.9vw;
+    height: 130vh;
+    /* border: 5px dashed red; */
+    position: relative;
+}
+#page-overview h1{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    font-family: 'BTitr';
+    font-size:xx-large;
+    bottom: 5%;
+    left: 3%;
+    font-size: 3rem;
+}
+.main-header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #8cbe2f;
+    padding: 0.5rem 1rem;
+    z-index: 60;
+    /* display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-nav__item--cta a {
+  color: white !important;
+  background: var(--highlight-color) !important;
+  padding: 0.5rem 1rem !important;
+  border-radius: 8px;
+}
+.main-nav__item--cta a:hover,
+.main-nav__item--cta a:active {
+  color: var(--highlight-color) !important;
+  background: white !important;
+  border: none;
+}
+/* .main-nav__item--cta {
+  animation: wiggle 400ms 3s 8 ease-out none;
+} */
+.main-nav__items {
+    font-family: 'BTitr';
+    margin-bottom: 0.5rem;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+.main-nav__item {
+  margin: 0 1rem;
+}
+
+.main-nav__item a{
+  text-decoration: none;
+  color: var(--dark-green);
+  font-weight: bold;
+  padding: 0.2rem 0;
+}
+
+.main-nav__item a:hover,
+.main-nav__item a:active {
+  color: white;
+  border-bottom: 4px solid white;
+}
+.the-items{
+  width: 98.9vw;
+  height: 130vh;
+  position: relative;
+}
+.Caption{
+  background-color: #eb67e4;
+  padding: 1rem;
+  font-family: 'BFarnaz';
+  font-size:xx-large;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mohsenbd{
+  background:url("myPics/mohsenbd.jpg") center/cover no-repeat border-box,#ff1b68; 
+}
+.mahdi{
+  background:url("myPics/mahdiPhotoshop.jpg") center/cover no-repeat border-box,#ff1b68; 
+}
+.mohsenboyka{
+  background:url("myPics/Mohsen.jpg") center/cover no-repeat border-box,#ff1b68;
+  height: 200vh;
+}
+.aliz{
+  background:url("myPics/aliz.JPG") center/cover no-repeat border-box,#ff1b68;
+}
+.meraj{
+  background:url("myPics/meraj\ aliz.jpg") center/cover no-repeat border-box,#ff1b68;
+  height: 200vh;
+}
+.shapour{
+  background:url("myPics/myself.jpg") center/cover no-repeat border-box,#ff1b68;
+  height: 200vh;
+}
+.hadi{
+  background:url("myPics/hadi.jpg") center/cover no-repeat border-box,#ff1b68;
+  height: 200vh;
+  width: 80vw;
+}
+.matsin{
+  background:url("myPics/matin.JPG") center/cover no-repeat border-box,#ff1b68;
+}
+.mj{
+  background:url("myPics/mj.jpg") center/cover no-repeat border-box,#ff1b68;
+}
+.fs2{
+  background:url("myPics/unknown.jpg") center/cover no-repeat border-box,#ff1b68;
+  width: 80vw;
+}
+.oo{
+  background:url("myPics/old\ one.jpg") center/cover no-repeat border-box,#ff1b68;
+}
+.des1{
+  background:url("myPics/the\ best.jpg") center/cover no-repeat border-box,#ff1b68;
+}

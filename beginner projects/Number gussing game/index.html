@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number guessing game</title>
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1 class="text-center text-primary">Number guessing game</h1>
+    <p class="text-center">
+        We have selected a random number between 1 and 100. See if you can guess it in 10 turns or
+        fewer. We'll tell you if your guess was too high or too low.
+    </p>
+    <div class="form row text-center">
+        <label for="guessField">Enter a guess: </label>
+        <input type="number" id="guessField" class="form-control mt-2 guessField">
+        <input type="submit" value="Submit My Guess" class="btn btn-outline-success mt-3 guessSubmit">
+    </div>
+    <div class="resultParas">
+        <p class="guesses"></p>
+        <p class="chances"></p>
+        <p class="lastResult text-white p-2 text-center"></p>
+        <p class="lowOrHi"></p>
+    </div>
+
+    <script>
+        //generating a number between 1-100
+        let randomNumber = Math.floor(Math.random() * 100) + 1;
+
+        //needed elements
+        const guessField = document.querySelector('.guessField');
+        const guessSubmit = document.querySelector('.guessSubmit');
+        const guesses = document.querySelector('.guesses');
+        const chances = document.querySelector('.chances');
+        const lastResult = document.querySelector('.lastResult');
+        const lowOrHi = document.querySelector('.lowOrHi');
+        let guessCount = 1;
+        let resetButton;
+
+        //checking guess
+        function checkGuess() {
+            let userGuess = Number(guessField.value);
+            // alert(typeof userGuess);
+            if (guessCount === 1) {
+                guesses.textContent = 'Previous Guesses: ';
+                chances.textContent = '';
+            }
+            guesses.textContent += userGuess + '-';
+            chances.textContent = 'chances left = ' + (10 - guessCount);
+
+            if (userGuess === randomNumber) {
+                lastResult.textContent = 'You Win!'
+                lastResult.style.backgroundColor = 'green';
+                lowOrHi.textContent = '';
+                gameEnd();
+            } else if (guessCount === 10) {
+                lastResult.textContent = '!Game Over!'
+                lastResult.style.backgroundColor = 'red';
+                lowOrHi.textContent = '';
+                gameEnd();
+            } else {
+                lastResult.textContent = 'Wrong!'
+                lastResult.style.backgroundColor = 'orange';
+                if (userGuess < randomNumber) {
+                    lowOrHi.textContent = 'Your guess was low';
+                } else if (userGuess > randomNumber) {
+                    lowOrHi.textContent = 'Your guess was hight';
+                }
+            }
+            guessCount++;
+            guessField.value = '';
+            guessField.focus();
+        }
+        guessSubmit.addEventListener("click", checkGuess);
+
+        function gameEnd() {
+            guessField.disabled = true;
+            guessSubmit.disabled = true;
+            resetButton = document.createElement('button');
+            resetButton.textContent = 'start new game';
+            document.body.appendChild(resetButton);
+            resetButton.addEventListener("click", resetGame)
+        }
+        function resetGame() {
+            guessCount = 1;
+            const resultParas = document.querySelectorAll('.resultParas p');
+            for (let i = 0; i < resultParas.length; i++) {
+                resultParas[i].textContent = '';
+            }
+            resetButton.parentNode.removeChild(resetButton);
+            guessSubmit.disabled = false;
+            guessField.disabled = false;
+            guessField.value = '';
+            guessField.focus();
+            lastResult.style.backgroundColor = 'white';
+            randomNumber = Math.floor(Math.random() * 100) + 1;
+        }
+    </script>
+</body>
+
+</html>

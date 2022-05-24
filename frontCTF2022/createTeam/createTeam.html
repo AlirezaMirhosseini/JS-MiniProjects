@@ -1,0 +1,100 @@
+<html lang="fa" dir="rtl">
+    <head>
+        <title>Team stuff</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="createTeamsStyle.css" />
+        <link rel="icon" href="../asset/icon/bitsCTF.jpg">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/tsparticles"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&display=swap" rel="stylesheet">
+    </head>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light main-nav">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Bits CTF</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav top-nav">
+                    </ul>
+                    <div class="d-flex">
+                        <div class="d-flex text-white">
+                            <div class="player-info">
+                                <span>نام بازیکن </span><br/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex count-down-container">
+                        <div id="count_down">
+                            <i class="far fa-clock"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="logout">
+                    <a href="#" class="logout">خروج</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <body>
+        <div id="particles-js "></div>
+        <div class="container-login col-11 col-md-8 col-lg-6 ">
+            <p class="header-words ">Create Team</p>
+            <form action=" ">
+                <input type="text " class="input " placeholder="نام تیم " />
+                <input type="submit " class="btn " value="ثبت تیم " />
+            </form>
+            <div id="hash">hash</div>
+        </div>
+        <div class="container2-login col-11 col-md-8 col-lg-6 ">
+            <p class="header-words ">Join Team</p>
+            <form>
+                <input type="text " class="input " placeholder="کد ورود به تیم " />
+                <input type="submit " class="btn " value="ورود " />
+            </form>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+        <script src="../asset/particleScript.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js " integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW " crossorigin="anonymous "></script>
+        <script>
+            var Time = new Date("Mar 17, 2022 09:00:00");
+            var countDownDate = Time.getTime(); // Hasan bia inja time bede
+
+            var x = setInterval(function() {
+
+                // Get today's date and time
+                var now = new Date();
+
+                // Find the distance between now and the count down date
+                var distance = countDownDate - now.getTime();
+
+                // Time calculations for days, hours, minutes and seconds
+
+                var days = Math.floor((distance / 1000 / 60 / (60 * 24)));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                hours = (hours < 10) ? "0" + hours : hours;
+                minutes = (minutes < 10) ? "0" + minutes : minutes;
+                seconds = (seconds < 10) ? "0" + seconds : seconds;
+                // Display the result in the element with id="demo"
+                document.getElementById("count_down").innerHTML = '<i class="far fa-clock" style="color: rgb(0, 99, 30); margin: 2px" ></i>' + days + ":" +  hours + ":"
+                    + minutes + ":" + seconds + "";
+
+                // If the count down is finished, write some text
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("count_down").innerHTML = "EXPIRED";
+                }
+            }, 1000);
+        </script>
+
+
+        
+    </body>
+</html>

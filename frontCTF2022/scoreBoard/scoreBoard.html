@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Scoreboard</title>
+        <link rel="stylesheet" href="scoreBoardStyle.css">
+        <link rel="icon" href="../asset/icon/bitsCTF.jpg">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Bits CTF</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav top-nav"">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">صفحه اصلی</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scoreboard-link" href="#">جدول امتیازات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://meet.iut.ac.ir/b/ili-fkl-odk-wva">ارتباط آنلاین</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex count-down-container">
+                        <div id="count_down">
+                            <i class="far fa-clock"></i>
+                        </div>
+                        <div class="d-flex text-white">
+                            <img src="/storage/img/avatar.png" style="border-radius: 50%" width="50"height="50"/>
+                            <div class="player-info">
+                                <span class="team">نام تیم </span><br/>
+                                <span>نام بازیکن </span><br/>
+                                <span>امتیاز : 200</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="logout">
+                    <a href="#" class="logout">خروج</a>
+                </div>
+            </div>
+        </nav>
+        <table class="score_board">
+            <thead>
+                <tr>
+                    <th>رتبه بندی</th>
+                    <th>اسامی افراد</th>
+                    <th>سوال اول</th>
+                    <th>سوال دوم</th>
+                    <th>سوال سوم</th>
+                    <th>سوال چهارم</th>
+                    <th>سوال پنجم</th>
+                    <th>سوال ششم</th>
+                    <th>سوال هفتم</th>
+                    <th id="score">امتیاز</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td> محمد جلیل وند</td>
+                    <td> </td>
+                    <td style="color: #ffd02f; font-size: 30px; text-align: center"> &#9730 </td>
+                    <td> </td>
+                    <td> </td>
+                    <td style="color: #ffd02f; font-size: 30px; text-align: center"> &#9730 </td>
+                    <td> </td>
+                    <td> </td>
+                    <td>250 </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>سعید رضایی</td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td style="color: #ffd02f; font-size: 30px; text-align: center"> &#9730 </td>
+                    <td> </td>
+                    <td>150</td>
+                </tr>
+                    <tr>
+                    <td>3</td>
+                    <td> شادمهر جلیل وند</td>
+                    <td style="color: #ffd02f; font-size: 30px; text-align: center"> &#9730 </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td style="color: #ffd02f; font-size: 30px; text-align: center"> &#9730 </td>
+                    <td>300</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>  زهرا ابطحی</td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td style="color: #ffd02f; font-size: 30px; text-align: center"> &#9730 </td>
+                    <td> </td>
+                    <td style="color: #ffd02f; font-size: 30px; text-align: center"> &#9730 </td>
+                    <td style="color: #ffd02f; font-size: 30px; text-align: center"> &#9730 </td>
+                    <td>450</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>نیوشا احمدی</td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td style="color: #ffd02f; font-size: 30px; text-align: center"> &#9730 </td>
+                    <td> </td>
+                    <td> </td>
+                    <td style="color: #ffd02f; font-size: 30px; text-align: center"> &#9730 </td>
+                    <td>300 </td>
+                </tr>
+            </tbody>
+        </table>
+        <script>
+            var Time = new Date("Mar 17, 2022 09:00:00");
+            var countDownDate = Time.getTime(); // Hasan bia inja time bede
+
+            var x = setInterval(function() {
+
+                // Get today's date and time
+                var now = new Date();
+
+                // Find the distance between now and the count down date
+                var distance = countDownDate - now.getTime();
+
+                // Time calculations for days, hours, minutes and seconds
+
+                var days = Math.floor((distance / 1000 / 60 / (60 * 24)));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                hours = (hours < 10) ? "0" + hours : hours;
+                minutes = (minutes < 10) ? "0" + minutes : minutes;
+                seconds = (seconds < 10) ? "0" + seconds : seconds;
+                // Display the result in the element with id="demo"
+                document.getElementById("count_down").innerHTML = '<i class="far fa-clock" style="color: rgb(0, 99, 30); margin: 2px" ></i>' + days + ":" +  hours + ":"
+                    + minutes + ":" + seconds + "";
+
+                // If the count down is finished, write some text
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("count_down").innerHTML = "EXPIRED";
+                }
+            }, 1000);
+        </script>
+    </body>
+</html>

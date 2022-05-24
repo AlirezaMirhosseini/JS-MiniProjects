@@ -1,0 +1,193 @@
+<html lang="fa" dir="rtl">
+    <head>
+        <title>Dashboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="../asset/icon/bitsCTF.jpg">
+        <link rel="stylesheet" href="dashboard.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet"/>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light main-nav">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Bits CTF</a>
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav top-nav"">
+                        <li class="nav-item">
+                            <a class="nav-link active dashboard-link" aria-current="page" href="#">صفحه اصلی</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link not-dashboard" href="#">جدول امتیازات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link not-dashboard" href="https://meet.iut.ac.ir/b/ili-fkl-odk-wva">ارتباط آنلاین</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex count-down-container">
+                        <div id="count_down">
+                            <i class="far fa-clock"></i>
+                        </div>
+                        <div class="d-flex text-white">
+                            <img src="/storage/img/avatar.png" style="border-radius: 50%" width="50" height="50"/>
+                            <div class="player-info">
+                                <span class="team">نام تیم </span><br/>
+                                <span>نام بازیکن </span><br/>
+                                <span>امتیاز : 200</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="logout">
+                    <a href="#" class="logout">خروج</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="challenges container">
+            <div class="challenge">
+                <a href="#">
+                    <div class="ch-id">0</div> 
+                    <p class="ch-title">نام این سوال</p>
+                    <span>امتیاز : 200</span><br />
+                    <span>دسته بندی : Web</span><br>
+                    <span> تعداد حل : 2</span>
+                </a>
+            </div>
+            <div class="challenge">
+                <a href="">
+                    <div class="ch-id">1</div>
+                    <p class="ch-title">نام این سوال</p>
+                    <span>امتیاز : 200</span><br />
+                    <span>دسته بندی : Web</span><br>
+                    <span> تعداد حل : 2</span>
+                </a>
+            </div>
+            <div class="challenge">
+                <a href="">
+                    <div class="ch-id">2</div>
+                    <p class="ch-title">نام این سوال</p>
+                    <span>امتیاز : 200</span><br />
+                    <span>دسته بندی : Web</span><br>
+                    <span> تعداد حل : 2</span>
+                </a>
+            </div>
+            <div class="challenge">
+                <a href="">
+                    <div class="ch-id">3</div>
+                    <p class="ch-title">نام این سوال</p>
+                    <span>امتیاز : 200</span><br />
+                    <span>دسته بندی : Web</span><br>
+                    <span> تعداد حل : 2</span>
+                </a>
+            </div>
+            <div class="challenge">
+                <a href="">
+                    <div class="ch-id">4</div>
+                    <p class="ch-title">نام این سوال</p>
+                    <span>امتیاز : 200</span><br />
+                    <span>دسته بندی : Web</span><br>
+                    <span> تعداد حل : 2</span>
+                </a>
+            </div>
+            <div class="challenge">
+                <a href="">
+                    <div class="ch-id">5</div>
+                    <p class="ch-title">نام این سوال</p>
+                    <span>امتیاز : 200</span><br />
+                    <span>دسته بندی : Web</span><br>
+                    <span> تعداد حل : 2</span>
+                </a>
+            </div>
+            <div class="challenge">
+                <a href="">
+                    <div class="ch-id">6</div>
+                    <p class="ch-title">نام این سوال</p>
+                    <span>امتیاز : 200</span><br />
+                    <span>دسته بندی : Web</span><br>
+                    <span> تعداد حل : 2</span>
+                </a>
+            </div>
+            <div class="challenge">
+                <a href="">
+                    <div class="ch-id">7</div>
+                    <p class="ch-title">نام این سوال</p>
+                    <span>امتیاز : 200</span><br />
+                    <span>دسته بندی : Web</span><br>
+                    <span> تعداد حل : 2</span>
+                </a>
+            </div>
+            <div class="challenge">
+                <a href="">
+                    <div class="ch-id">8</div>
+                    <p class="ch-title">نام این سوال</p>
+                    <span>امتیاز : 200</span><br />
+                    <span>دسته بندی : Web</span><br>
+                    <span> تعداد حل : 2</span>
+                </a>
+            </div>
+            <div class="challenge">
+                <a href="">
+                    <div class="ch-id">9</div>
+                    <p class="ch-title">نام این سوال</p>
+                    <span>امتیاز : 200</span><br />
+                    <span>دسته بندی : Web</span><br>
+                    <span> تعداد حل : 2</span>
+                </a>
+            </div>
+            <div class="challenge">
+                <a href="">
+                    <div class="ch-id">10</div>
+                    <p class="ch-title">نام این سوال</p>
+                    <span>امتیاز : 200</span><br />
+                    <span>دسته بندی : Web</span><br>
+                    <span> تعداد حل : 2</span>
+                </a>
+            </div>
+        </div>
+        
+        <script>
+            var Time = new Date("Mar 17, 2022 09:00:00");
+            var countDownDate = Time.getTime(); // Hasan bia inja time bede
+
+            var x = setInterval(function() {
+
+                // Get today's date and time
+                var now = new Date();
+
+                // Find the distance between now and the count down date
+                var distance = countDownDate - now.getTime();
+
+                // Time calculations for days, hours, minutes and seconds
+
+                var days = Math.floor((distance / 1000 / 60 / (60 * 24)));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                hours = (hours < 10) ? "0" + hours : hours;
+                minutes = (minutes < 10) ? "0" + minutes : minutes;
+                seconds = (seconds < 10) ? "0" + seconds : seconds;
+                // Display the result in the element with id="demo"
+                document.getElementById("count_down").innerHTML = '<i class="far fa-clock" style="color: rgb(0, 99, 30); margin: 2px" ></i>' + days + ":" +  hours + ":"
+                    + minutes + ":" + seconds + "";
+
+                // If the count down is finished, write some text
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("count_down").innerHTML = "EXPIRED";
+                }
+            }, 1000);
+        </script>
+    </body>
+</html>

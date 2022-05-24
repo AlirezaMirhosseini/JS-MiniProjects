@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Aldrich&family=Bungee+Hairline&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+body {
+    background-color: #2e3251 !important;
+    margin: 0;
+}
+
+.challenge a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.challenge a:hover {
+    color: #a8e2fc;
+    cursor: pointer;
+}
+
+.main-nav {
+    background-color: #2e3251;
+    box-shadow: 0 4px 2px -2px rgb(32, 32, 32);
+}
+
+.navbar-brand {
+    color: #ffd02f !important;
+    font-family: "Lobster" !important;
+    font-size: 2em !important;
+}
+
+.top-nav li {
+    font-weight: 900;
+    margin: 0.2em 2em;
+}
+
+#count_down {
+    background-color: #1b2136;
+    padding: 0.4em 2em;
+    height: 100%;
+    margin: 0.5em 2em;
+    border-radius: 1em;
+    color: white;
+}
+
+.fa-clock {
+    color: rgb(0, 99, 30);
+    margin: 2px;
+}
+
+.navbar {
+    font-family: "dana";
+    background-color: #2e3251;
+    box-shadow: 0 4px 2px -2px rgb(32, 32, 32);
+}
+
+.count-down-container {
+    margin-left: 3em;
+    position: absolute;
+    top: 12%;
+    left: 5%;
+}
+
+.text-white {
+    margin-right: 1em;
+}
+
+.player-info {
+    font-size: 0.8em;
+    margin-right: 1em;
+}
+
+.logout{
+    margin-left: 1em;
+    color: aliceblue;
+    font-family: "dana";
+    text-decoration: none;
+    float: left;
+}
+
+.logout:hover{
+    color: #a0a4b9;
+}
+
+.team {
+    font-size: 1.2em !important;
+}
+
+.not-dashboard {
+    color: #a0a4b9 !important;
+}
+
+.dashboard-link {
+    color: #ffd02f !important;
+}
+
+.challenges {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 2em 2em;
+}
+
+.input {
+    background-color: #2e3251;
+    outline: none;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    border: 0;
+    width: 100%;
+    color: white;
+}
+
+.input:focus {
+    border: 2px solid rgb(22, 0, 37);
+    margin: 0.5em 1em;
+}
+
+.submit {
+    background-color: #00c7c7;
+    border: 0;
+    margin-top: 1em;
+    padding: 0.5em 3em;
+    width: 100%;
+    color: white;
+    border-radius: 4px;
+}
+
+.challenge {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #1e253e;
+    height: 9em;
+    width: 19.25em;
+    position: relative;
+    padding: 1.5em 2em;
+    margin: 0em 0.5em;
+    margin-bottom: 2em;
+    border-radius: 1em;
+    font-family: "dana";
+}
+
+.ch-title {
+    font-size: 1em;
+    color: #ffd02f;
+    font-weight: 600;
+}
+
+.challenge > span {
+    color: white;
+}
+
+.ch-id {
+    font-family: "Aldrich" !important;
+    font-size: 5em;
+    position: absolute;
+    top: 21%;
+    left: 5%;
+}

@@ -1,0 +1,196 @@
+@font-face {
+    font-family:'dana';
+    src: url("../asset/ctfFonts/IRANSansWebFaNum.ttf") format("truetype");
+}
+
+html {
+    height: 100%;
+}
+
+#particles-js canvas {
+    display: block;
+    vertical-align: bottom;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+    -webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease;
+    transition: opacity .8s ease, transform 1.4s ease;
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+}
+
+#particles-js {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -10;
+    top: 0;
+    left: 0
+}
+
+canvas {
+    display: block;
+    position: fixed;
+    z-index: -1;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: 'Sinabold';
+    background-color: #2e3251 !important;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+#hash {
+    color: #5fff2f !important;
+}
+
+.header-words {
+    font-size: 1.8em !important;
+    font-family: "Lobster", cursive !important;
+}
+
+.main-nav {
+    overflow: hidden !important;
+    background-color: #2e3251;
+    width: 100%;
+    box-shadow: 0 4px 2px -2px rgb(32, 32, 32);
+}
+
+.navbar-brand {
+    color: #ffd02f !important;
+    font-family: 'Lobster' !important;
+    font-size: 1.5em !important;
+}
+
+.top-nav li {
+    font-weight: 900;
+    margin: 0.1em 0.5em;
+}
+
+.player-info {
+    margin-top: 9px;
+    font-family: "dana";
+}
+
+.container-login {
+    border-radius: 0.5em;
+    padding: 1em 1em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    color: #ffd02f;
+    background-color: #1e253e;
+    font-family: "dana"!important;
+    margin-top: 60px;
+}
+
+.container2-login {
+    border-radius: 0.5em;
+    padding: 1em 1em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    color: #ffd02f;
+    background-color: #1e253e;
+    font-family: "dana"!important;
+    margin: 1.6em;
+}
+
+.btn {
+    font-weight: 700 !important;
+    background-color: #00c7c7 !important;
+    border: 0 !important;
+    margin-top: 1em !important;
+    padding: 0.5em 3em !important;
+    border-radius: 4px !important;
+    -webkit-border-radius: 4px !important;
+    -moz-border-radius: 4px !important;
+    -ms-border-radius: 4px !important;
+    -o-border-radius: 4px !important;
+}
+
+.btn:hover {
+    background-color: #02a8a8 !important
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#count_down{
+    background-color: #1b2136;
+    padding: 0.4em 2em;
+    height: 100%;
+    margin: 0.5em 2em;
+    border-radius: 1em;
+    color: white;
+    font-family: 'dana';
+}
+
+.fa-clock{
+    color: rgb(0, 99, 30); 
+    margin: 2px;
+}
+
+.input {
+    background-color: #2e3251;
+    outline: none;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    border: 0;
+    margin: 0.5em 1em;
+    color: white;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.input:focus {
+    border: 2px solid rgb(22, 0, 37);
+    margin: 0.5em 1em;
+}
+
+.logout{
+    margin-left: 1em;
+    color: aliceblue;
+    font-family: "dana";
+    text-decoration: none;
+    float: left;
+}
+
+.logout:hover{
+    color: #a0a4b9;
+}
+
+.container-login>p {
+    color: #ffd02f !important;
+    font-family: "Lobster", cursive;
+    font-size: 2em;
+}
+
+.submit {
+    background-color: #00c7c7;
+    border: 0;
+    margin-top: 1em;
+    padding: 0.5em 3em;
+    color: white;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}

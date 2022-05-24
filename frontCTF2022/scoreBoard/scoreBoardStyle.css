@@ -1,0 +1,126 @@
+@font-face {
+    font-family: "dana";
+    src: url("../asset/ctfFonts/IRANSansWebFaNum.ttf") format("truetype");
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #2e3251 !important;
+    direction: rtl;
+}
+
+table,
+th,
+td {
+    border: 5px solid rgba(0, 0, 0, 0.15) !important;
+    width: 1400px;
+    padding: 12px 15px;
+}
+
+.score_board {
+    border-radius: 10px;
+    margin: 30px 30px;
+    font-size: 0.9em;
+    font-family: "dana";
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    direction: rtl;
+}
+.score_board #score {
+    width: 20px;
+}
+.score_board thead th {
+    background-color: #585b7a !important;
+    color: white;
+    text-align: right;
+}
+.score_board tr td {
+    border-width: medium;
+}
+.score_board tr:hover {
+    background-color: darkred;
+}
+.score_board tbody tr {
+    border-bottom: 3px solid yellow;
+    background-color: #a9abbb;
+    color: white;
+}
+
+#count_down{
+    background-color: #1b2136;
+    padding: 0.4em 2em;
+    height: 100%;
+    margin: 0.5em 2em;
+    border-radius: 1em;
+    color: white;
+}
+
+.fa-clock{
+    color: rgb(0, 99, 30); 
+    margin: 2px;
+}
+
+.navbar {
+    font-family: "dana";
+    background-color: #2e3251;
+    box-shadow: 0 4px 2px -2px rgb(32, 32, 32);
+}
+
+.count-down-container{
+    margin-left: 3em;
+    position: absolute; 
+    top: 12%; 
+    left: 5%;
+}
+
+.logout{
+    margin-left: 1em;
+    color: aliceblue;
+    font-family: "dana";
+    text-decoration: none;
+    float: left;
+}
+
+.logout:hover{
+    color: #a0a4b9;
+}
+
+.text-white{
+    margin-right: 1em;
+}
+
+.navbar-brand {
+    color: #ffd02f !important;
+    font-family: "Lobster" !important;
+    font-size: 2em !important;
+}
+
+.nav-link{
+    color: #a0a4b9 !important;
+}
+
+.scoreboard-link{
+    color:  #ffd02f !important;
+}
+
+.top-nav li a {
+    font-weight: 900;
+}
+
+.top-nav li {
+    margin: 0.2em 2em;
+}
+
+.top-nav:first-child {
+    color: #ffd02f;
+}
+.player-info {
+    font-size: 0.8em;
+    margin-right: 1em;
+}
+.team {
+    font-size: 1.2em !important;
+}
