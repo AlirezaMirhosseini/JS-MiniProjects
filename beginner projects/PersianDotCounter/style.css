@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "dana";
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: #0d0c0c5e 0px 0px 15px 5px;
+    width: 500px;
+    min-width: fit-content;
+    margin: 0px 10px;
+    background-color: aqua;
+}
+
+input {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    text-align: right;
+}
+
+.res {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 25px;
+}
