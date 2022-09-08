@@ -1,2 +1,2 @@
-# Front-samples
-some simple front samples
+# JavaScript-Beginner
+some simple JavaScript samples
