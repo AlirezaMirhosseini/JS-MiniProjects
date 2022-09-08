@@ -1,2 +1,2 @@
 # JavaScript-Beginner
-some simple JavaScript samples
+some simple Html-Css-JavaScript samples
