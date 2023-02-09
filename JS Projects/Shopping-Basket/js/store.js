@@ -15,6 +15,8 @@ const bastekProductsContainer = $.querySelector('.cart-items')
 const removeAllProductsBtn = $.querySelector('#remove-all-products')
 const cartTotalPriceElem = $.querySelector('.cart-total-price')
 
+let productsFragment = $.createDocumentFragment()
+
 allProducts.forEach(function (product) {
     let productContainer = $.createElement('div')
     productContainer.classList.add('shop-item')
@@ -43,11 +45,14 @@ allProducts.forEach(function (product) {
 
     productDetailsContainer.append(productPriceSpan, prodcutAddButton)
     productContainer.append(productTitleSpan, productImageElem, productDetailsContainer)
-    shopItemsContainer.append(productContainer)
+    
+    productsFragment.append(productContainer)
+
+    // shopItemsContainer.append(productContainer) -> bad performance
 
 })
 
-
+shopItemsContainer.append(productsFragment)
 
 function addProductToBasketArray (productId) {
 
